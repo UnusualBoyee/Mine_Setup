@@ -1,0 +1,32 @@
+#!/bin/sh
+
+<< '###'
+
+mkdir /home/$USER/PS
+PS="/home/$USER/PS"
+cd $PS
+mkdir RUNNER
+mkdir SUBDOMAINS
+mkdir test
+mkdir main
+mkdir own
+###
+# getting default shell
+DEFshell=`awk -F: -v user="$USER" '$1 == user {print $NF}' /etc/passwd | rev | cut -d '/' -f1 | rev`
+case $DEFshell in
+	bash)
+		cp Mine_Aliases ~/home/$USER/.bash_aliases
+		FUNbash
+		;;
+	zsh)
+		cp Mine_Aliases ~/home/$USER/.zsh_aliases
+		FUNzsh
+		;;
+	ksh)	
+		cp Mine_Aliases ~/home/$USER/.ksh_aliases
+		FUNksh
+		;;
+	*)
+		echo "UNKNOWN SHELL"
+		exit1
+esac

@@ -1,0 +1,53 @@
+# PS
+alias pspace='cd ~/PS'
+alias update='bash ~/PS/own/update'
+alias sdrq='bash ~/PS/RUNNER/domainResponse'
+alias sub='cd ~/PS/SUBDOMAINS'
+alias run='cd ~/PS/RUNNER'
+alias tester='cd ~/PS/test'
+alias psree='tree ~/PS'
+alias showMpass='cat ~/PS/generate.pss'
+
+
+#tools
+alias x='XSpear'
+alias v='vim'
+alias o='node'
+alias c='gcc'
+alias n='nasm'
+alias p='python3'
+alias p2='python2.7'
+alias g='go'
+alias xdg='xdg-open'
+alias ping='ping www.google.com'
+alias map='nmap'
+alias hid='curl'
+alias lhmap='nmap 127.0.0.1'
+alias blockpass='.~/PS/RUNNER/block'
+#alias myNpass='python3.8 ~/PS/RUNNER/passGen.py'
+
+#dirs
+alias main='cd ~/PS/main'
+alias desk='cd ~/Desktop'
+alias down='cd ~/Downloads'
+alias tls='cd ~/Desktop/tools'
+alias bg='cd ~/Desktop/bug_bounty'
+alias payd='cd ~/Desktop/payload'
+
+#files
+alias books='vim ~/Desktop/data/books.v'
+alias imp='vim ~/PS/.IMP.txt'
+alias ba='vim ~/.bash_aliases'
+alias ca='cat ~/.bash_setup/.bash_aliases'
+alias websites='vim ~/Desktop/data/websites.v'
+alias passwords='vim ~/Desktop/data/passwords.v'
+alias blogs='vim ~/Desktop/data/blogs.v'
+alias tlsbrf='vim  ~/PS/toolsBrefing.v'
+
+#sys
+alias sn='shutdown now'
+alias rb='reboot'
+alias bk='cd $OLDPWD'
+
+#scripts
+alias dn='vim ~/.bash_setup/.dailyNotes'
